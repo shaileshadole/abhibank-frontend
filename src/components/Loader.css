@@ -1,0 +1,10 @@
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 0px rgba(11, 241, 141, 0.5);
+}

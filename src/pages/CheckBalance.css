@@ -1,0 +1,28 @@
+.check-balance-span {
+      /* color: rgb(4, 0, 255); */
+      color: rgba(255, 255, 255, 0.976);
+      font-weight: bold;
+      font-size: 2rem;
+}
+
+.checkbalance-button{
+    /* margin-top: 35px; */
+    margin-left: 0rem;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    /* width: 100%; */
+    width: 270px;
+    padding: 10px;
+    border: 1px solid #29cb00;
+    background: #29cb00;
+    color: white;
+    border-radius: 5px;
+    transition: all ease 500ms;
+}
+
+.checkbalance-button:hover {
+    cursor: pointer;
+    color: #29cb00;
+    background: none;
+}
+

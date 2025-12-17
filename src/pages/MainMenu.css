@@ -1,0 +1,33 @@
+.main-menu-container{
+    /* margin-left: 7vw;
+    margin-right: 7vw;
+    height: 77vh; */
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* gap: 15rem; */
+}
+
+.main-menu-container a {
+  text-decoration: none;
+  color: inherit;
+
+  transition: all 0.3s ease-in;
+}
+
+.main-menu-container a:hover {
+  color: #ffffff;
+  transform: scale(1.1)
+}
+
+.main-menu-container a:hover h4 {
+  transform: scale(1.01);
+}
+
+.main-menu-container div h2{
+    margin: 30px 30px;
+}
+

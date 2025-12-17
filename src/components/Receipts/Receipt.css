@@ -1,0 +1,80 @@
+.receipt-container {
+  width: 320px;
+  margin: 50px auto;
+  padding: 30px 25px;
+
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  color: #333;
+}
+
+.receipt-container .bank-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.receipt-container .receipt-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.receipt-container .label {
+  font-weight: 500;
+  color: #555;
+}
+
+.receipt-container .value {
+  font-weight: 600;
+  color: #222;
+}
+
+.receipt-container .red {
+  color: #e74c3c; /* Red color for withdrawals */
+  font-weight: bold;
+}
+
+.receipt-container .green {
+  color: #2ecc71; /* Green color for deposits */
+  font-weight: bold;
+}
+
+.receipt-container .footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+  color: #777;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+
+.receipt-home-button button{
+    /* margin-top: 35px; */
+    margin-left: 0rem;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    /* width: 100%; */
+    width: 270px;
+    padding: 10px;
+    border: 1px solid #29cb00;
+    background: #29cb00;
+    color: white;
+    border-radius: 5px;
+    transition: all ease 500ms;
+}
+
+.receipt-home-button button:hover {
+    cursor: pointer;
+    color: #29cb00;
+    background: none;
+}

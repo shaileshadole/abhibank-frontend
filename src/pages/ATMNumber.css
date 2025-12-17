@@ -1,0 +1,52 @@
+.aTMNumber-container{
+    /* margin-left: 7vw;
+    margin-right: 7vw; */
+    /* height: 77vh;
+    padding: 20px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transform: scale(0.5);
+}
+
+.aTMNumber-container p span{
+    /* margin-bottom: 7rem; */
+}
+
+.aTMNumber-atm-number-box{
+  margin: 20px auto;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: #61dafb;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+.aTMNumber-container-copy-icon{
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.aTMNumber-container button {
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #29cb00;
+    background: #29cb00;
+    color: white;
+    border-radius: 5px;
+    transition: all ease 500ms;
+}
+
+.aTMNumber-container  button:hover {
+    background: #2fdf03;
+    cursor: pointer;
+}
