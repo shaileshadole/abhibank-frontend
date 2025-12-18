@@ -13,7 +13,7 @@ const MainMenu = () => {
       <div>
         <Link to="/users/change-pin" ><h4>Change PIN</h4></Link>
         <Link to="/users/check-balance" ><h4>Check Balance</h4></Link>
-        <Link to="/transactions/fullhistory" ><h4>Email Statement</h4></Link>
+        <Link to="/transactions/fullstatement" ><h4>Email Statement</h4></Link>
       </div>
     </div>
   )

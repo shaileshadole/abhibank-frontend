@@ -12,14 +12,14 @@ const ATMNumber = ({ name, atmNumber }) => {
     alert("ATM Number copied to clipboard!");
   };
 
-  // //Auto-redirect after 60 seconds
-  // useEffect(() => {
-  //     const timer = setTimeout(() => {
-  //         navigate("/");
-  //     }, 60000);
+  //Auto-redirect after 60 seconds
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          navigate("/");
+      }, 60000);
 
-  //     return () => clearTimeout(timer);
-  // }, [navigate]);
+      return () => clearTimeout(timer);
+  }, [navigate]);
 
   //Use this to update seconds
   useEffect(() => {

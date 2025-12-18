@@ -36,8 +36,8 @@ const ATMMachine = () => {
                 <Route path="/users/deposit" element={<Deposite />} />
                 <Route path="/users/withdraw" element={<Withdraw />} />
                 <Route path="/users/main-menu" element={<MainMenu />} />
-                <Route path="/transactions/threehistory" element={<MiniStatement />} />
-                <Route path="/transactions/fullhistory" element={<FullStatement />} />
+                <Route path="/transactions/ministatement" element={<MiniStatement />} />
+                <Route path="/transactions/fullstatement" element={<FullStatement />} />
                 <Route path="/receipt" element={<Receipt />} />
               </Routes>
             </BrowserRouter>

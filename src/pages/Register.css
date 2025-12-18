@@ -16,7 +16,7 @@
 }
 
 .register-input-field {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .register-input-field label{
@@ -27,13 +27,12 @@
 
 .register-input-field input{
     width: 100%;
-    width: 360px;
+    max-width: 360px;
     padding: 10px;
     border: 1px solid #29cb00;
     background: transparent;
     color: #29cb00;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .register-submit-button button {
@@ -53,6 +52,6 @@
 }
 
 .register-submit-button button:hover {
-    background: #2fdf03;
+    background: #5bff32;
     cursor: pointer;
 }
