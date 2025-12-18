@@ -14,6 +14,7 @@ const CheckBalance = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    setLoading(true);
     const fetchBalance = async () => {
       try {
         const res = await axios.get(`${server}/users/balance`, {
@@ -24,6 +25,8 @@ const CheckBalance = () => {
       } catch (err) {
         console.error(err);
         alert("Failed to Fetch Balance");
+      } finally {
+        setLoading(false);
       }
     };
 

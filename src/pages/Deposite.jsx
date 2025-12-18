@@ -14,6 +14,7 @@ const Deposit = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const parsedAmount = parseFloat(amount);
     if (isNaN(parsedAmount) || parsedAmount <= 0) {
@@ -65,6 +66,8 @@ const Deposit = () => {
       } else {
         alert("Withdrawal failed. Please try again.");
       }
+    } finally {
+      setLoading(false);
     }
   };
 

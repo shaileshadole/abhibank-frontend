@@ -16,6 +16,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     //Client-side Validation
     const pinRegex = /^[0-9]{4}$/;
@@ -47,6 +48,8 @@ const Register = () => {
     } catch (err) {
       console.error(err);
       alert("Registration Failed!");
+    } finally {
+      setLoading(false);
     }
   };
 

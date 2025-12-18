@@ -10,10 +10,11 @@ const ChangePin = () => {
   const [newPin, setNewPin] = useState();
   const [flag, setFlag] = useState(false);
   const navigate = useNavigate();
-  const { loading } = useContext(AppContext);
+  const { loading, setLoading } = useContext(AppContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const res = await axios.patch(
@@ -31,6 +32,8 @@ const ChangePin = () => {
     } catch (err) {
       console.error(err);
       alert(err.response?.data?.message || "PIN did not changed");
+    } finally {
+      setLoading(false);
     }
   };
 

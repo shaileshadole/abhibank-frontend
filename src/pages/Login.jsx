@@ -14,6 +14,7 @@ const Login = () => {
   const { loading, setLoading } = useContext(AppContext);
 
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
 
     //Simple Validation: Check if Pin is 4 digits
