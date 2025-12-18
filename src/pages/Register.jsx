@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Register.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { server } from "../context/config";
 import ATMNumber from "./ATMNumber";
+import Loader from "../components/Loader";
+import { AppContext } from "../context/AppContext";
 
 const Register = () => {
   const [pin, setPin] = useState("");
   const [name, setName] = useState("");
   const [atmNumber, setAtmNumber] = useState(null);
   const navigate = useNavigate();
+  const { loading, setLoading } = useContext(AppContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,9 +55,11 @@ const Register = () => {
     return <ATMNumber name={name} atmNumber={atmNumber} />;
   }
 
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <div className="register-container">
-      <h5>Welcome To Abhi Bank</h5>
+      <h2>Welcome To Abhi Bank</h2>
       <form onSubmit={handleSubmit}>
         <div className="register-input-field">
           <label htmlFor="name">Name</label>

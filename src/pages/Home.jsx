@@ -7,7 +7,7 @@ const Home = () => {
     
     return (
         <div className="home-container">
-            <h5>Welcome to Abhi Bank</h5>
+            <h2>Welcome to Abhi Bank</h2>
             <h3>ATM SERVICES</h3>
 
             <div>
