@@ -1,103 +1,123 @@
 :root {
-    --machine-color: #e0e0e0;
-    --machine-shadow: #9e9e9e;
-    --screen-bg: #0a0a0a;
-    --screen-text: #33ff00;
-    --screen-text-shadow: #33ff00;
-    --bezel-color: #2c3e50;
-    --btn-color: #bdc3c7;
-    --btn-shadow: #7f8c8d;
+  --machine-color: #e0e0e0;
+  --machine-shadow: #9e9e9e;
+  --screen-bg: #0a0a0a;
+  --screen-text: #33ff00;
+  --screen-text-shadow: #33ff00;
+  --bezel-color: #2c3e50;
+  --btn-color: #bdc3c7;
+  --btn-shadow: #7f8c8d;
 }
 
 .atm-body {
-    background: linear-gradient(135deg, #d6d6d6 0%, #b0b0b0 100%);
-    width: 90%;
-    height: 100vh;
-    max-width: 1000px;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 
-        inset 2px 2px 5px rgba(255,255,255,0.7),
-        inset -2px -2px 5px rgba(0,0,0,0.3),
-        10px 10px 30px rgba(0,0,0,0.5);
-    border: 2px solid #888;
-    position: relative;    
+  background: linear-gradient(135deg, #d6d6d6 0%, #b0b0b0 100%);
+  width: 90%;
+  height: 100vh;
+  max-width: 1000px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.3), 10px 10px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid #888;
+  position: relative;
 }
 
 .brand-header {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #444;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
-    background: #cdcdcd;
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #999;
-    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+  background: #cdcdcd;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .screen-container {
-    background-color: var(--bezel-color);
-    padding: 20px;
-    border-radius: 15px 15px 5px 5px;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
-    position: relative;
-    margin-bottom: 25px;
-    border: 4px solid #1a252f;
+  background-color: var(--bezel-color);
+  padding: 20px;
+  border-radius: 15px 15px 5px 5px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+  position: relative;
+  margin-bottom: 25px;
+  border: 4px solid #1a252f;
 }
 
 .crt-screen {
-    background-color: var(--screen-bg);
-    height: 78vh;
-    width: 100%;
-    border-radius: 40% 40% 5% 5% / 10% 10% 0% 0%;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-    color: var(--screen-text);
-    text-shadow: 0 0 5px var(--screen-text-shadow);
-    font-size: 1.4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 2px solid #000;
+  background-color: var(--screen-bg);
+  height: 78vh;
+  width: 100%;
+  border-radius: 40% 40% 5% 5% / 10% 10% 0% 0%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  color: var(--screen-text);
+  text-shadow: 0 0 5px var(--screen-text-shadow);
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #000;
 }
 
-.crt-screen::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
 }
 
 .crt-screen::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);
-    z-index: 2;
-    pointer-events: none;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
 }
 
 .screen-content {
-    z-index: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .atm-body {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .crt-screen {
+    height: 50vh;
+    width: 100%;
+  }
 }
